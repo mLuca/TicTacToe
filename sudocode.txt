@@ -4,6 +4,7 @@ Greeting-Screen and Icon selection
     input selection
 
 Play game (LOOP)
+    - increment round counter
     - display board
     - identify player turn
     - input player selection
@@ -11,9 +12,9 @@ Play game (LOOP)
     - update board data
     - check if already won
         - yes: call End Game Screen with winning player
-        - no: board full?
-            - yes: call End Game Screen with None
-            - no: continue loop 
+    - check if round 9
+        - yes: call End Game Screen with draw
+        - no: continue
 
 End Game Screen
     - (display board with winning symbols emphasized)
